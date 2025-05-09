@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Web Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* List Styles */
+        .roman-list {
+            list-style-type: upper-roman;
+            padding-left: 30px;
+        }
+        
+        .square-list {
+            list-style-type: square;
+            padding-left: 30px;
+        }
+        
+        /* Image Styles */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Table Styles */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .data-table th {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        /* Form Styles */
+        .registration-form {
+            background-color: #f5f5f5;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: 2px solid #4a6fa5;
+            border-color: transparent;
+        }
+        
+        .radio-group, .checkbox-group {
+            margin: 15px 0;
+        }
+        
+        .radio-option, .checkbox-option {
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .radio-option input, .checkbox-option input {
+            margin-right: 10px;
+        }
+        
+        button {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #3a5a80;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        /* Multimedia Styles */
+        .media-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        video, audio {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .data-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .form-group {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    
+    <!-- HTML5 Images Section -->
+    <section id="images">
+        <h2>Dapertec</h2>
+        <figure>
+            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" 
+                 alt="Computer setup with code on screen" 
+                 class="responsive-img">
+            <figcaption>Computer workstation with code editor open - Photo from Pexels</figcaption>
+        </figure>
+        
+        <picture>
+            <source media="(min-width: 800px)" srcset="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg">
+            <source media="(min-width: 500px)" srcset="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Responsive web design illustration" 
+                 class="responsive-img">
+        </picture>
+    </section>
+    
+    <!-- HTML5 Lists Section -->
+    <section id="lists">
+        <h2>Website Development Steps</h2>
+        
+        <h3>Development of a website </h3>
+        <ol class="roman-list">
+            <li>Planning Phase</li>
+            <li>Design Phase</li>
+            <li>Development Phase</li>
+            <li>Testing Phase</li>
+            <li>Deployment Phase</li>
+        </ol>
+        
+        <h3>Using the following</h3>
+        <ul class="square-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Accessibility</li>
+        </ul>
+        
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the structure of web pages</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - the presentation of web pages</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>The programming language of the web</dd>
+        </dl>
+    </section>
+    
+    <!-- HTML5 Tables Section -->
+    <section id="tables">
+        <h2> Employee Information</h2>
+        
+        <table class="data-table">
+            <caption>Employee Contact Information</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sarah Dlamini</td>
+                    <td>Web Developer</td>
+                    <td>IT</td>
+                    <td>s.dlamini@dapertec.com</td>
+                    <td>(+27) 456-7890</td>
+                </tr>
+                <tr>
+                    <td>Michael Dube</td>
+                    <td>UX Designer</td>
+                    <td>Design</td>
+                    <td>m.dube@dapertec.com</td>
+                    <td>(+27) 456-7891</td>
+                </tr>
+                <tr>
+                    <td>Emily Rodriguez</td>
+                    <td>Project Manager</td>
+                    <td>Management</td>
+                    <td>e.rodriguez@dapertec.com</td>
+                    <td>(+27) 456-7892</td>
+                </tr>
+                <tr>
+                    <td>David Kim</td>
+                    <td>QA Engineer</td>
+                    <td>Testing</td>
+                    <td>d.kim@dapertec.com</td>
+                    <td>(+27) 456-7893</td>
+                </tr>
+                <tr>
+                    <td>Jessica Williams</td>
+                    <td>Content Writer</td>
+                    <td>Marketing</td>
+                    <td>j.williams@dapertec.com</td>
+                    <td>(+27) 456-7894</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total Employees: 5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+    <!-- HTML5 Forms Section -->
+    <section id="forms">
+        <h2>Registration form</h2>
+        
+        <form class="registration-form" id="registrationForm" method="post" novalidate>
+            <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" 
+                       placeholder="Enter your full name" 
+                       required minlength="3" maxlength="50">
+                <small class="hint">Minimum 3 characters, maximum 50</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" 
+                       placeholder="your.email@example.com" 
+                       required>
+                <small class="hint">Must be a valid email address</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Create a strong password" 
+                       required minlength="8" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$">
+                <small class="hint">Minimum 8 characters with at least one uppercase, one lowercase, and one number</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                <input type="password" id="confirmPassword" name="confirmPassword" 
+                       placeholder="Re-enter your password" 
+                       required>
+            </div>
+            
+            <div class="form-group">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" name="birthdate" 
+                       min="1900-01-01" max="2023-12-31">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" 
+                       placeholder="(+27) 456-7890" 
+                       pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                <small class="hint">Format: (123) 456-7890 or 123-456-7890</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="website">Website (optional)</label>
+                <input type="url" id="website" name="website" 
+                       placeholder="https://example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="country">Country <span class="required">*</span></label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="bio">Short Biography</label>
+                <textarea id="bio" name="bio" rows="4" 
+                          placeholder="Tell us about yourself..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Gender <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="genderMale" name="gender" value="male" required>
+                        <label for="genderMale">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="genderFemale" name="gender" value="female">
+                        <label for="genderFemale">Female</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="genderOther" name="gender" value="other">
+                        <label for="genderOther">Other</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="genderPreferNot" name="gender" value="prefer-not">
+                        <label for="genderPreferNot">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Interests (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interestTech" name="interests" value="technology">
+                        <label for="interestTech">Technology</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interestSports" name="interests" value="sports">
+                        <label for="interestSports">Sports</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interestMusic" name="interests" value="music">
+                        <label for="interestMusic">Music</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interestTravel" name="interests" value="travel">
+                        <label for="interestTravel">Travel</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <input type="number" id="experience" name="experience" 
+                       min="0" max="50" step="1" value="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="favcolor">Favorite Color</label>
+                <input type="color" id="favcolor" name="favcolor" value="#4a6fa5">
+            </div>
+            
+            <div class="form-group">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Subscribe to our newsletter</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions <span class="required">*</span></label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+    
+    <!-- HTML5 Multimedia Section -->
+    <section id="multimedia">
+        <h2>HTML5 Multimedia</h2>
+        
+        <h3>Video Element</h3>
+        <div class="media-container">
+            <video width="640" height="360" controls poster="https://images.pexels.com/photos/3566226/pexels-photo-3566226.jpeg">
+                <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                <source src="https://samplelib.com/lib/preview/webm/sample-5s.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <p>Sample video demonstrating HTML5 video element</p>
+        </div>
+        
+        <h3>Audio Element</h3>
+        <div class="media-container">
+            <audio controls>
+                <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+                <source src="https://samplelib.com/lib/preview/ogg/sample-3s.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Sample audio demonstrating HTML5 audio element</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Dapertec. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Form validation script
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            // Check if passwords match
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                e.preventDefault();
+            }
+            
+            // Additional validation could be added here
+        });
+    </script>
+</body>
+</html>
